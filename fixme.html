@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content width=device-width, initial-scale=1.0>
+    <title>Sabores da Praça</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2e8d5;
+            color: #333;
+        }
+
+        header {
+            background-color: #3b2416;
+            padding: 10px;
+            text-align: left;
+            color: #fff;
+            height: 180px;
+        }
+
+        h1 {
+            font-size: 25px;
+            margin: 5px;
+            color: #ffcc00;
+        }
+
+        .slogan {
+            font-size: 28px;
+            color: black;
+            margin-left: 300px;
+        }
+
+        .endereco {
+            text-align: center;
+            font-size: 11px;
+        }
+
+        nav {
+            background-color: #f5b642;
+            padding: 20px;
+            text-align: left;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        nav a:hover {
+            color: white;
+            text-decoration: none;
+            margin: 30;
+            font-weight: normal;
+        }
+
+        nav a:hover {
+            background-color: #3b2416;
+            padding: 10px;
+        }
+
+        main {
+            width: 500px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        .apresentacao {
+            padding: 5px;
+            text-align: right;
+            background-color: #ffcc00;
+        }
+
+        .apresentacao h2 {
+            color: #fff;
+            font-size: 35px;
+        }
+
+        section {
+            padding: 40px, margin 5px;
+        }
+
+        .entradas {
+            background-color: #ddd;
+        }
+
+        .pratos {
+            background-color: #fff0c2;
+        }
+
+        .bebidas {
+            background-color: #c9d8e8;
+        }
+
+        .sobremesas {
+            background-color: #e5c7d7;
+        }
+
+        h2 {
+            text-align: right;
+            color: #b22222;
+            border-bottom: 5px solid #333;
+        }
+
+        h3 {
+            font-size: 14px;
+            color: #008000;
+        }
+
+        ul {
+            list-style-type: square;
+            padding: 40px;
+        }
+
+        li {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+
+        .produto {
+            width: 100%;
+            min-height: 100px;
+            background-color: #eee;
+            margin: 30px;
+            padding: 5px;
+            border: 5px solid black;
+            overflow: hidden;
+        }
+
+        .produto img {
+            width: 300px;
+            height: 80px;
+            object-fit: cover;
+            float: right;
+        }
+
+        .preco {
+            color: red;
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+        .contato {
+            background-color: #333;
+            color: yellow;
+            text-align: left;
+        }
+
+        .contato h2 {
+            color: yellow;
+        }
+
+        .footer {
+            background-color: #f5b642;
+            padding: 30px;
+            text-align: center;
+            color: black;
+            margin-top: 100px;
+        }
+
+        .footer p {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <p>© 2026 Sabores da Praça</p>
+    </footer>
+
+    <header>
+
+        <p class="endereco">
+            R. das Flores, 250 - Centro
+        </p>
+
+        <nav>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#contato">Contato</a>
+            <a href="#pratos">Pratos</a>
+            <a href="#entradas">Entradas</a>
+            <a href="#sobremesas">Sobremesas</a>
+        </nav>
+
+        <p class="slogan">
+            🍽️ O melhor da cozinha brasileira
+        </p>
+
+        <h1>Sabores da Praça</h1>
+
+    </header>
+
+</main>
+
+        <section class="apresentacao">
+
+            <p>
+                Confira algumas das nossas especialidades.
+            </p>
+
+            <h2>
+                Nosso Cardápio
+            </h2>
+
+        </section>
+
+        <section id="pratos">
+
+            <h2>Pratos Principais</h2>
+
+            <article class="produto">
+
+                <p class="preco">
+                    R$ 42,00
+                </p>
+
+                <h3>
+                    Filé à Parmegiana
+                </h3>
+
+                <p>
+                    Filé empanado, molho de tomate,
+                    presunto e queijo.
+                </p>
+
+            </article>
+
+            <article class="produto">
+
+                <img src="hamburguer.jpg">
+
+                <p class="preco">
+                    R$ 36,00
+                </p>
+
+                <p>
+                    Pão brioche, hambúrguer de 180g,
+                    queijo cheddar, alface, tomate
+                    e molho especial.
+                </p>
+
+                <h3>
+                    Hambúrguer Artesanal
+                </h3>
+
+            </article>
+
+            <article class="produto">
+
+                <h3>
+                    Frango Grelhado
+                </h3>
+
+                <p class="preco">
+                    R$ 32,00
+                </p>
+
+                <p>
+                    Peito de frango grelhado
+                    acompanhado de arroz e salada.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section id="bebidas">
+
+            <h2>Bebidas</h2>
+
+            <ul>
+                <li>Água mineral - R$ 4,00</li>
+                <li>Refrigerante lata - R$ 6,00</li>
+                <li>Suco natural - R$ 9,00</li>
+            </ul>
+
+        </section>
+
+        <section id="entradas">
+
+            <h2>Entradas</h2>
+
+            <ul>
+                <li>Bruschetta - R$ 18,00</li>
+                <li>Pão de alho - R$ 12,00</li>
+                <li>Bolinho de queijo - R$ 16,00</li>
+            </ul>
+
+        </section>
+
+        <section id="sobremesas">
+
+            <h2>Sobremesas</h2>
+
+            <ul>
+                <li>Pudim de leite - R$ 12,00</li>
+                <li>Brownie com sorvete - R$ 16,00</li>
+                <li>Cheesecake de frutas vermelhas - R$ 18,00</li>
+            </ul>
+
+        </section>
+
+        <section id="contato">
+
+            <h2>Fale conosco</h2>
+
+            <p>
+                Telefone: (41) 3333-4444
+            </p>
+
+            <p>
+                E-mail:
+                contato@saboresdapraca.com
+            </p>
+
+            <p>
+                Horário: Segunda a sábado,
+                das 11h às 23h.
+            </p>
+        </section>
